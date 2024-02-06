@@ -3,7 +3,7 @@ const test = async (name, age, school) => {
 
   const options = {
     resolveWithFullResponse: true,
-    rejectUnauthorized: false,
+    rejectUnauthorized: true,
   };
 
   const ssl = await rp.get(`http://${age}-${name}.${school}`, options)
